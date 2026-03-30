@@ -4,6 +4,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
+    print('adding log')
     return {"message": "Hello, FastAPI! updated responnse... adding something"}
 
 @app.get("/health")
